@@ -67,7 +67,7 @@ A query parameter of 'limit' is required in order to return a 200 response
 {
   "saying": "Jack shit!"
 }
-
+```
 
 ## Usage
 
