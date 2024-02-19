@@ -219,37 +219,8 @@
           1,
           null
         ]
-      },
-      "/Users/blakesergesketter/Turing/m4/consultency/hack_a_thon/justinisms_api/app/controllers/api/v0/justinisms_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/blakesergesketter/Turing/m4/consultency/hack_a_thon/justinisms_api/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/blakesergesketter/Turing/m4/consultency/hack_a_thon/justinisms_api/app/serializers/justinism_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1708377731
+    "timestamp": 1708378287
   }
 }

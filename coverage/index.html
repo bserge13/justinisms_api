@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-19T15:22:11-06:00">2024-02-19T15:22:11-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-02-19T15:31:27-06:00">2024-02-19T15:31:27-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,8 +29,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.02
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>13</b> files in total.
+    <b>10</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>62</b> relevant lines,
-    <span class="green"><b>62</b> lines covered</span> and
+    <b>51</b> relevant lines,
+    <span class="green"><b>51</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,28 +71,6 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#79fd2bc00ce73bb8ed6c1231de692708e3bf7936" class="src_link" title="app/controllers/api/v0/justinisms_controller.rb">app/controllers/api/v0/justinisms_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.14</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#7c0ff8231cca71292528eb66f2c274634a092ec7" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
             <td class="strong t-file__name"><a href="#496ee01a7c4afb70141072240b28a7ab968a39f3" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
@@ -109,17 +87,6 @@
             <td class="cell--number">3</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#3325e30bab4001dcb8bf5025dd6c651806c2e735" class="src_link" title="app/serializers/justinism_serializer.rb">app/serializers/justinism_serializer.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -229,211 +196,6 @@
       </div>
 
       <div class="source_files">
-      
-        <div class="source_table" id="79fd2bc00ce73bb8ed6c1231de692708e3bf7936">
-  <div class="header">
-    <h3>app/controllers/api/v0/justinisms_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class Api::V0::JustinismsController &lt; ApplicationController</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def index </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    if params[:limit].present? </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      limit = params[:limit] </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      justinisms = Justinism.order(&quot;RANDOM()&quot;).limit(limit)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      render json: JustinismSerializer.new(justinisms), status: 200</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">    else </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      render json: { &quot;errors&quot;: [{ &quot;detail&quot;: &quot;Couldn&#39;t find saying without parameters&quot;}] }, status: 400</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">    end </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="7c0ff8231cca71292528eb66f2c274634a092ec7">
-  <div class="header">
-    <h3>app/controllers/application_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>1</b> relevant lines.
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class ApplicationController &lt; ActionController::API</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
       
         <div class="source_table" id="496ee01a7c4afb70141072240b28a7ab968a39f3">
   <div class="header">
@@ -549,81 +311,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="3325e30bab4001dcb8bf5025dd6c651806c2e735">
-  <div class="header">
-    <h3>app/serializers/justinism_serializer.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class JustinismSerializer </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  include JSONAPI::Serializer </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  attributes :saying </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
             
             
 
